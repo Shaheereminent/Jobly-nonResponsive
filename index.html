@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobly</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Jobly Logo" class="logo">
+
+        <nav>
+            <ul>
+                <li class="navbar-p">Home <i class="fas fa-caret-down"></i></li>
+                <li class="navbar-p">Jobs</li>
+                <li class="navbar-p">Categories <i class="fas fa-caret-down"></i></li>
+                <li class="navbar-p">Location <i class="fas fa-caret-down"></i></li>
+                <li class="navbar-p">Pages <i class="fas fa-caret-down"></i></li>
+            </ul>
+
+            <div class="cart-wrapper">
+                <img src="cart.svg" alt="cart icon" class="cart-icon">
+                <button class="btn cart-quantity-btn">0</button>
+            </div>
+        </nav>
+
+        <button class="btn not-focused-btn">Log in / Register</button>
+    </header>
+
+    <!-- ------------------- Hero ------------------- -->
+    <section class="hero-wrapper">
+        <!-- ---------------- Left Hero Section ---------------- -->
+        <section class="left-side-hero">
+            <button class="btn indicate-motive-btn">Build your future with us</button>
+            <h1>Get your dream <br> job with Jobly.</h1>
+            <p class="h5-light">Find jobs, create trackable resumes and enrich your applications</p>
+    
+            <form action="search" class="search-wrapper">
+                <div class="search-icon-container">
+                    <i class="fas fa-search"></i>
+                    <input type="search" class="search-input" maxlength="256" placeholder="Job Title, Keywords..." required>
+                </div>
+                <input type="submit" class="search-btn" value="Find Jobs">
+            </form>
+    
+            <div class="category-suggestion-wrapper">
+                <p class="category">Popular Categories:</p>
+                <span class="card-p">Customer Services</span>
+                <span class="card-p">Project Management</span>
+                <span class="card-p">Development</span>
+            </div>
+        </section>
+
+        <!-- ---------------- Right Hero Section ---------------- -->
+        <section class="right-side-hero">
+            <div class="connect-ring"></div>
+
+            <div class="emp jobly-ring">
+                <div class="jobly-img jobly-logo-container"></div>
+            </div>
+
+            <div class="emp emp1">
+                <div class="emp-img emp1-container"></div>
+            </div>
+    
+            <div class="emp emp2">
+                <div class="emp-img emp2-container"></div>
+            </div>
+    
+            <div class="emp emp3">
+                <div class="emp-img emp3-container"></div>
+            </div>
+    
+            <div class="emp emp4">
+                <div class="emp-img emp4-container"></div>
+            </div>
+    
+            <div class="emp emp5">
+                <div class="emp-img emp5-container"></div>
+            </div>
+    
+            <div class="emp emp6">
+                <div class="emp-img emp6-container"></div>
+            </div>
+        </section>
+    </section>
+
+        <!-- ---------------- Partners Section ---------------- -->
+        <section class="partners">
+            <p class="h5-light">These companies partnered with us to drive growth</p>
+
+            <div class="partner-logo-wrapper">
+                <img src="new wave.png" alt="New Wave" class="part-logo part1">
+                <img src="friday.png" alt="New Wave" class="part-logo part2">
+                <img src="backyard.png" alt="New Wave" class="part-logo part3">
+                <img src="webflow.png" alt="New Wave" class="part-logo part4">
+                <img src="retro.png" alt="New Wave" class="part-logo part5">
+            </div>
+
+            <button class="btn indicate-part-time-btn">Build your future with us</button>
+            <h2>How Jobly Works</h2>
+
+            <div class="process-wrapper">
+                <div class="process-steps resume-wrapper">
+                    <img src="resume.png" alt="Resume Icon" class="process-img resume-img">
+                    <h6>Resume Assessments</h6>
+                    <p class="detail-p">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="process-steps resume-wrapper">
+                    <img src="fitting.png" alt="Job Fitting Icon" class="process-img fitting-img">
+                    <h6>Job Fit Scoring</h6>
+                    <p class="detail-p">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="process-steps resume-wrapper">
+                    <img src="help.png" alt="Help Icon" class="process-img help-img">
+                    <h6>Top-Notch Help</h6>
+                    <p class="detail-p">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------------- Featured Jobs Section ---------------- -->
+        <section class="main-section feature-jobs">
+            <div class="feature-job-heading-wrapper">
+                <div class="feature-jobs-heading">
+                    <h3>Featured Jobs</h3>
+                    <p class="h5-light">Know your worth and find the job that qualify your life</p>
+                </div>
+                <button class="focused-btn">View All Listing</button>
+            </div>
+          
+            <div class="job-category-wrapper">
+                <p class="category">All Categories:</p>
+                <span class="card-p">Customer Services</span>
+                <span class="card-p">Project Management</span>
+                <span class="card-p">Development</span>
+                <span class="card-p">Design</span>
+                <span class="card-p">Marketing</span>
+                <span class="card-p">Accounting / Finance</span>
+            </div>
+            
+            <!-- ------------- Card Design ------------- -->
+            <div class="feature-jobs-cards-wrapper">
+                <div class="first3-card-wrapper">
+                    <div class="card-wrapper dribbble-card-wrapper">
+                        <div class="card-indicator">
+                            <button class="indicate-part-time-btn">Part Time</button>
+                            <button class="indicate-featured-btn">Featured</button>
+                        </div>
+                        <img src="dribbble.png" alt="Dribbble Logo" class="card-company-logo card-dribbble-logo">
+                        <p class="company-title">Dribbble</p>
+                        <h4>Customer Support Agent</h4>
+                        <p class="category">$40,000 - $200,000/year / Remote / <br> Project Management / Part Time</p>
+                        <button class="btn focused-btn">Apply For Job</button>
+                    </div>
+        
+                    <div class="card-wrapper paypal-card-wrapper">
+                        <div class="card-indicator">
+                            <button class="indicate-part-time-btn">Part Time</button>
+                            <button class="indicate-featured-btn">Featured</button>
+                        </div>
+                        <img src="paypal.png" alt="Paypal Logo" class="card-company-logo card-paypal-logo">
+                        <p class="company-title">Paypal</p>
+                        <h4>General Ledger Accountant</h4>
+                        <p class="category">$40,000 - $200,000/year / Remote / <br> Project Management / Part Time</p>
+                        <button class="btn focused-btn">Apply For Job</button>
+                    </div>
+        
+                    <div class="card-wrapper apple-card-wrapper">
+                        <div class="card-indicator">
+                            <button class="indicate-part-time-btn">Part Time</button>
+                            <button class="indicate-featured-btn">Featured</button>
+                        </div>
+                        <img src="apple.png" alt="Apple Logo" class="card-company-logo card-apple-logo">
+                        <p class="company-title">Apple</p>
+                        <h4>Senior Product Designer</h4>
+                        <p class="category">$40,000 - $200,000/year / Remote / <br> Project Management / Part Time</p>
+                        <button class="btn focused-btn">Apply For Job</button>
+                    </div>
+                </div>
+          
+    
+                <div class="card-row-container second3-card-wrapper">
+                    <div class="card-wrapper starbuck-card-wrapper">
+                        <div class="card-indicator">
+                            <button class="indicate-part-time-btn">Part Time</button>
+                            <button class="indicate-featured-btn">Featured</button>
+                        </div>
+                        <img src="starbucks.png" alt="Starbuck Logo" class="card-company-logo card-starbuck-logo">
+                        <p class="company-title">Starbuck</p>
+                        <h4>Product Manager</h4>
+                        <p class="category">$40,000 - $200,000/year / Remote / <br> Project Management / Part Time</p>
+                        <button class="btn focused-btn">Apply For Job</button>
+                    </div>
+        
+                    <div class="card-wrapper dell-card-wrapper">
+                        <div class="card-indicator">
+                            <button class="indicate-part-time-btn">Part Time</button>
+                            <button class="indicate-featured-btn">Featured</button>
+                        </div>
+                        <img src="dell.png" alt="Dell Logo" class="card-company-logo card-dell-logo">
+                        <p class="company-title">Dell</p>
+                        <h4>Software Engineer</h4>
+                        <p class="category">$40,000 - $200,000/year / Remote / <br> Project Management / Part Time</p>
+                        <button class="btn focused-btn">Apply For Job</button>
+                    </div>
+        
+                    <div class="card-wrapper slack-card-wrapper">
+                        <div class="card-indicator">
+                            <button class="indicate-part-time-btn">Part Time</button>
+                            <button class="indicate-featured-btn">Featured</button>
+                        </div>
+                        <img src="slack.png" alt="Slack Logo" class="card-company-logo card-slack-logo">
+                        <p class="company-title">Slack</p>
+                        <h4>Recruiting Coordinator</h4>
+                        <p class="category">$40,000 - $200,000/year / Remote / <br> Project Management / Part Time</p>
+                        <button class="btn focused-btn">Apply For Job</button>
+                    </div>
+                </div>
+            
+            </div>
+           
+        <!-- ---------------- Location Section ---------------- -->
+
+        <section class="location">
+            <p class="h5-light">Select by Location</p>
+            <div class="all-location-wrapper">
+                <div class="miami-img-container">
+                    <div class="location-img miami"></div>
+                    <div class="miami img-overlay"></div>
+                    <p class="location-title">Miami, FL</p>
+                </div>
+    
+                <div class="manhattan-img-container">
+                    <div class="location-img manhattan"></div>
+                    <div class="manhattan img-overlay"></div>
+                    <p class="location-title">Manhattan, NY</p>
+                </div>
+    
+                <div class="london-img-container">
+                    <div class="location-img london"></div>
+                    <div class="london img-overlay"></div>
+                    <p class="location-title">London, UK</p>
+                </div>
+    
+                <div class="remote-img-container">
+                    <div class="location-img remote"></div>
+                    <div class="remote img-overlay"></div>
+                    <p class="location-title">Remote</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------------- FAQ Section ---------------- -->
+        <section class="faq">
+            <button class="btn indicate-motive-btn">F.A.Q</button>
+            <h2>Things people often ask <br> about</h2>
+
+            <div class="faq-container">
+                <div class="summary-container">
+                    <i class="fas fa-plus"></i>
+                    <h5>Why won't my payment go through</h5>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="summary-container">
+                    <i class="fas fa-plus"></i>
+                    <h5>How long does it take to get a free job opening approved</h5>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="summary-container">
+                    <i class="fas fa-plus"></i>
+                    <h5>Are there bulk discounts for featured job openings</h5>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="summary-container">
+                    <i class="fas fa-plus"></i>
+                    <h5>what's the cost to post a featured job opening on Jobly</h5>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="summary-container">
+                    <i class="fas fa-plus"></i>
+                    <h5>Why won't my payment go through</h5>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="summary-container">
+                    <i class="fas fa-plus"></i>
+                    <h5>How do I redeem a coupon?</h5>
+                </div>
+            </div>
+        </section>
+
+
+
+        </section>
+
+        <!-- ---------------- Testimonials Section ---------------- -->
+        <section class="main-section testimonials">
+            <button class="indicate-part-time-btn">What They Think</button>
+            <h2>Testimonials</h2>
+            <div class="review-person"></div>
+            <p class="testimonials-p">“The Jobly team provides excellent support, listens <br> to their users and continually works to improve <br> their product”</p>
+            <p class="testimonials-user testi-username">John Doe</p>
+            <p class="testimonials-user">Designer at Dribbble</p>
+
+            <div class="testimonials-num-wrapper">
+                <div class="page-testi testi1"></div>
+                <div class="page-testi testi2"></div>
+                <div class="page-testi testi3"></div>
+            </div>
+        </section>
+
+        <!-- ---------------- Appstore Section ---------------- -->
+        <section class="main-section appstore">
+            <div class="appstore-left-side-wrapper">
+                <img src="phone app.jpeg" alt="Mockup image of Jobly" class="website-mockup">
+            </div>
+
+            <div class="appstore-right-side-wrapper">
+                <button class="btn indicate-part-time-btn">Download Jobly Today</button>
+                <h2>You can find Jobly on <br> App and Play store</h2>
+                <p class="h5-light">Advertise your jobs to millions of monthly users</p>
+
+                <div class="perks-row first3-perks-row">
+                    <div class="app-perks-container">
+                        <button class="btn cart-quantity-btn"><i class="fas fa-check"></i></button>
+                        <p class="detail-p">Ecommerce</p>
+                    </div>
+    
+                    <div class="app-perks-container">
+                        <button class="btn cart-quantity-btn"><i class="fas fa-check"></i></button>
+                        <p class="detail-p">Responsive Design</p>
+                    </div>
+    
+                    <div class="app-perks-container">
+                        <button class="btn cart-quantity-btn"><i class="fas fa-check"></i></button>
+                        <p class="detail-p">50+ Ready Blocks</p>
+                    </div>
+                </div>
+
+                <div class="perks-row  second3-perks-row">
+                    <div class="app-perks-container">
+                        <button class="btn cart-quantity-btn"><i class="fas fa-check"></i></button>
+                        <p class="detail-p">Retina Ready</p>
+                    </div>
+    
+                    <div class="app-perks-container">
+                        <button class="btn cart-quantity-btn"><i class="fas fa-check"></i></button>
+                        <p class="detail-p">Top Support</p>
+                    </div>
+    
+                    <div class="app-perks-container">
+                        <button class="btn cart-quantity-btn"><i class="fas fa-check"></i></button>
+                        <p class="detail-p">Webflow Template</p>
+                    </div>
+                </div>
+
+                <div class="download-btn-wrapper">
+                    <div class="store-btn-wrapper app-store not-focused-btn">
+                        <img class="btn-store btn-app-store" src="appstore.png" alt="">
+                        <p>Play Store</p>
+                    </div>
+    
+                    <div class="store-btn-wrapper play-store not-focused-btn">
+                        <img class="btn-store btn-play-store" src="playstore.png" alt="">
+                        <p>Play Store</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+
+        <!-- ---------------- Blog Section ---------------- -->
+        <section class="main-section blog">
+            <div class="blog-heading-wrapper">
+                <div class="blog-heading-container">
+                    <h3>From Blog</h3>
+                    <p class="h5-light">Check out our latest blog posts</p>
+                </div>
+                <button class="btn focused-btn">View All Post</button>
+            </div>
+
+            <div class="blog-img-wrapper">
+                <div class="blog-responsive-img-wrappers">
+                    <div class="blog-responsive-img">
+                    </div>
+                    <div class="overlay responsive-img">
+                        <p>April 30, 2020 / Announcement</p>
+                        <h1>Why your clients needs a <br> responsive website</h1>
+                        <button class="btn not-focused-btn">Read more</button>
+                    </div>
+                </div>
+    
+                <div class="blog-company-img-wrappers">
+                    <div class="blog-company-img">
+                    </div>
+                    <div class="overlay responsive-img">
+                        <p>April 17, 2020 / Inspiring</p>
+                        <h1>How to bring Jobly to your company</h1>
+                        <button class="btn not-focused-btn">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------------- Blog Section ---------------- -->
+        <section class="cta">
+            <button class="btn indicate-part-time-btn">Contact Us</button>
+            <h2>Got a question?</h2>
+            <p class="h5-light">We're here to help. Check out our <strong>FAQs</strong>, send us an email or <br> call us at <strong>+1 800 444 111</strong></p>
+        </section>
+
+        <!-- ---------------- Jobly Bar Section ---------------- -->
+        <section class="main-section jobly">
+            <div class="jobly-bar-wrapper">
+                <img src="logo.png" alt="Joblee Logo" class="jobly-bar-logo">
+                <button class="btn focused-btn">View on Webflow</button>
+            </div>
+        </section>
+
+        <!-- ---------------- Footer ---------------- -->
+        <footer class="main-section footer">
+            <div class="footer-all-link-wrapper">
+                <div class="navigation-wrapper">
+                    <p class="footer-links-title-p">Navigation</p>
+                    <ul class="footer-links">
+                        <li class="footer-links-p">Home</li>
+                        <li class="footer-links-p">Jobs</li>
+                        <li class="footer-links-p">Pricing</li>
+                        <li class="footer-links-p">Contact</li>
+                        <div class="social-wrapper">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-slack"></i>
+                            <i class="fab fa-dribbble"></i>
+                        </div>
+                    </ul>
+                </div>
+    
+                <div class="navigation-wrapper">
+                    <p class="footer-links-title-p">Categories</p>
+                    <ul class="footer-links">
+                        <li class="footer-links-p">Customer Services</li>
+                        <li class="footer-links-p">Project Management</li>
+                        <li class="footer-links-p">Development</li>
+                        <li class="footer-links-p">Design</li>
+                        <li class="footer-links-p">Marketing</li>
+                        <li class="footer-links-p">Accounting / Finance</li>
+                    </ul>
+                </div>
+    
+                <div class="navigation-wrapper">
+                    <p class="footer-links-title-p">Location</p>
+                    <ul class="footer-links">
+                        <li class="footer-links-p">Miami, FL</li>
+                        <li class="footer-links-p">Manhattan, NY</li>
+                        <li class="footer-links-p">London, UK</li>
+                        <li class="footer-links-p">Remote</li>
+                    </ul>
+                </div>
+    
+                <div class="navigation-wrapper">
+                    <p class="footer-links-title-p">Information</p>
+                    <ul class="footer-links">
+                        <li class="footer-links-p">Style Guide</li>
+                        <li class="footer-links-p">Licensing</li>
+                        <li class="footer-links-p">Changelog</li>
+                        <li class="footer-links-p">Instruction</li>
+                        <li class="footer-links-p">404</li>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="copyright">© This is a <span class="span-1">Masterthemes</span> template powered by <span class="span-1">Webflow</span></span>
+      
+        </footer>
+     
+
+
+    <!-- -------------- Components -------------- -->
+    
+    <!-- <button class="btn focused-btn">Apply For Job</button>
+    <button class="btn not-focused-btn">Log in / Register</button>
+    <button class="btn indicate-part-time-btn">Part Time</button>
+    <button class="btn indicate-featured-btn">Featured</button>
+    <button class="btn cart-quantity-btn">0</button> -->
+</body>
+</html>
