@@ -1,2 +1,2 @@
 # Jobly-Clone
-https://shaheerinayatali.github.io/Jobly-Clone/
+https://shaheereminent.github.io/Jobly-nonResponsive/
